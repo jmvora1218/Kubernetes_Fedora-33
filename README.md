@@ -14,4 +14,9 @@ git remote add origin https://github.com/jmvora1218/Kubernetes_Fedora-33.git
 git branch -M main
 git push -u origin main
 
+
+#after File change
+
+git commit -a -m "Comment"
+git push
 ```
