@@ -1,10 +1,10 @@
-`
+Task-01
 * install fedora
 * install docker
 * install vscode as code editor (on client)
 * try running a docker container to ensure containers have access to internet
 * ensure that docker commands can run without sudo
-`
+
 
 ```bash
 # Base Configuration
