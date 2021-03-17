@@ -1,3 +1,11 @@
+`
+* install fedora
+* install docker
+* install vscode as code editor (on client)
+* try running a docker container to ensure containers have access to internet
+* ensure that docker commands can run without sudo
+`
+
 ```bash
 # Base Configuration
 1. installe Fedora-33-WS
@@ -39,4 +47,24 @@ newgrp docker
 
 # Run from non-root user
 docker run hello-world
+
+-------------------------------------------------------------------------------------
+# Docket network configuration.
+
+sudo systemctl stop docker
+sudo pkill docker
+sudo iptables -t nat -F
+sudo ifconfig docker0 down
+sudo brctl delbr docker0
+sudo systemctl start docker
+
+# downloaded the image 
+> docker pull curlimages/curl:7.75.0
+
+# run docker image
+> docker run --rm curlimages/curl:7.75.0 --version
+
+#example 
+> docker run --rm curlimages/curl:7.75.0 -L -v https://google.com
+
 ```
