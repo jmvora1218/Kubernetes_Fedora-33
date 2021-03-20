@@ -1,3 +1,4 @@
+``` bash
 # Network and route configuration 
 
 [jv@fedora-33 SimpleWebKV]$ ifconfig
@@ -91,3 +92,5 @@ MASQUERADE  all  --  192.168.49.0/24      anywhere
 
 [jv@fedora-33 SimpleWebKV]$ curl http://192.168.49.2:32210/
 Hello from SimpleKV
+
+```
